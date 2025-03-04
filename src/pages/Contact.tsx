@@ -161,7 +161,7 @@ export function Contact() {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 rounded-lg bg-dark-600 text-white border border-dark-400 focus:outline-none focus:ring-2 focus:ring-cyber-500 focus:border-transparent"
-                    placeholder="Edson Brunos"
+                    placeholder="Edson Bruno"
                   />
                 </div>
                 
