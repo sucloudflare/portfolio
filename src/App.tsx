@@ -31,8 +31,8 @@ function App() {
       <div className="fixed inset-0 flex items-center justify-center bg-dark-500">
         <div className="text-center">
           <div className="w-24 h-24 rounded-full border-4 border-cyber-500 border-t-transparent animate-spin mx-auto mb-6"></div>
-          <h1 className="text-3xl font-bold text-cyber-500 glitch" data-text="INITIALIZING">INITIALIZING</h1>
-          <p className="text-terminal-500 mt-2 font-fira">System boot sequence in progress...</p>
+          <h1 className="text-3xl font-bold text-cyber-500 glitch" data-text="INITIALIZING">INICIALIZANDO</h1>
+          <p className="text-terminal-500 mt-2 font-fira">Sequência de inicialização do sistema em andamento...</p>
         </div>
       </div>
     );
