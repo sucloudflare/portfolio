@@ -312,7 +312,7 @@ export function Home() {
               >
                 <div className="relative aspect-video overflow-hidden">
                 <img
-  src="https://lh5.googleusercontent.com/BLexGDxkMLj16YImeBo0n5WV5eybdoGJgYBrxWiAxnI7tAeFgKVts0wAoiN3sI7cia8ZDpBby8naqpH79ZLhvQ00nOFUuk7KukAKLHI1zFM6C0GN8cOBCVnkOMLSEDRzsA9YQaC8gfpxpfXAEZFOdbU"
+  src="https://i.pinimg.com/736x/56/a1/0b/56a10b873ffd997856d404fc23a1dd04.jpg"
   alt={`Project ${project}`}
   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
 />
@@ -324,9 +324,9 @@ export function Home() {
                 </div>
                 
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-white mb-2">Título do Projeto {project}</h3>
+                  <h3 className="text-xl font-bold text-white mb-2">Veja o projeto {project}</h3>
                   <p className="text-gray-400 mb-4">
-                  Uma breve descrição do projeto, seu propósito e as tecnologias utilizadas.
+                  Projetos de demostração de habilidades e experiência
                   </p>
                   <div className="flex flex-wrap gap-2">
                     <span className="text-xs bg-dark-500 text-cyber-500 px-2 py-1 rounded">React</span>
