@@ -47,7 +47,7 @@ export function Home() {
               transition={{ duration: 0.8 }}
             >
               <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-                <span className="text-cyber-500">&lt;</span> Edson Bruno <span className="text-cyber-500">/&gt;</span>
+                <span className="text-cyber-500">&lt;</span> Bruno <span className="text-cyber-500">/&gt;</span>
               </h1>
               
               <div className="text-xl md:text-2xl text-gray-300 mb-6 h-16 font-fira">
@@ -96,7 +96,7 @@ export function Home() {
                 <div className="absolute inset-0 rounded-full bg-gradient-to-r from-cyber-500 to-terminal-500 animate-pulse cyber-border"></div>
                 <img 
                   src="https://i.postimg.cc/vZ8xPCWP/481495225-933387805629150-8035866076375977421-n.jpg" 
-                  alt="Edson Bruno" 
+                  alt="Bruno" 
                   className="w-full h-full object-cover rounded-full border-4 border-dark-500"
                 />
               </div>
