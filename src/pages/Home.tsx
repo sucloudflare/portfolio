@@ -104,9 +104,9 @@ export function Home() {
               <div className="absolute -bottom-4 -right-4 bg-dark-600/90 backdrop-blur-sm p-4 rounded-lg border border-cyber-500/30 scanner">
                 <div className="terminal text-xs">
                   <p><span className="text-cyber-500">$</span> whoami</p>
-                  <p>edson_bruno</p>
+                  <p>bruno silva</p>
                   <p><span className="text-cyber-500">$</span> location</p>
-                  <p>Sobradinho, BA, Brazil</p>
+                  <p>Interior, BA, Brazil</p>
                   <p><span className="text-cyber-500">$</span> status</p>
                   <p>Ready for new challenges</p>
                 </div>

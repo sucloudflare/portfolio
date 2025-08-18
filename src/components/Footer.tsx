@@ -5,121 +5,103 @@ import {
   Heart, Code, Terminal
 } from 'lucide-react';
 
+const hoverAnim = { y: -5, scale: 1.15, rotate: [0, 5, -5, 0], transition: { duration: 0.5 } };
+const glowText = "hover:drop-shadow-[0_0_10px_rgba(0,255,255,0.7)]";
+
 export function Footer() {
+  const techs = ['React', 'Node.js', 'TypeScript', 'Java', 'AWS', 'DevOps', 'Python', 'SQL', 'NoSQL'];
+
   return (
-    <footer className="bg-dark-600/80 backdrop-blur-sm pt-12 pb-6 border-t border-cyber-500/20">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+    <footer className="bg-dark-700/80 backdrop-blur-lg pt-12 pb-6 border-t border-cyber-500/20 relative overflow-hidden">
+      <div className="absolute -top-20 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-cyber-500/20 rounded-full blur-3xl animate-pulse-slow pointer-events-none"></div>
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
+          
+          {/* Bio & Socials */}
           <div>
             <div className="flex items-center gap-2 mb-4">
               <motion.div
-                initial={{ rotate: 0 }}
-                animate={{ rotate: [0, 10, -10, 0] }}
-                transition={{ duration: 1, repeat: Infinity, repeatDelay: 5 }}
+                animate={{ rotate: [0, 15, -15, 0] }}
+                transition={{ duration: 1.5, repeat: Infinity, repeatDelay: 4 }}
               >
-                <Code size={28} className="text-cyber-500" />
+                <Code size={28} className="text-cyber-500 drop-shadow-lg" />
               </motion.div>
-              <span className="text-xl font-bold text-white">
+              <span className={`text-xl font-bold text-white ${glowText}`}>
                 <span className="text-cyber-500">&lt;</span>
-                Edson Bruno
+                Bruno
                 <span className="text-cyber-500">/&gt;</span>
               </span>
             </div>
             <p className="text-gray-400 mb-4">
-            Desenvolvedor Full Stack especializado na criação de aplicações web seguras, eficientes e intuitivas.
+              Desenvolvedor Full Stack especializado em aplicações web seguras, eficientes e intuitivas.
             </p>
             <div className="flex gap-4">
-              <motion.a 
-                href="https://github.com/sucloudflare" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                whileHover={{ y: -5, scale: 1.1 }}
-                className="w-10 h-10 rounded-full bg-dark-500 flex items-center justify-center text-gray-400 hover:text-cyber-500 hover:bg-dark-400 transition-colors"
-              >
-                <Github size={20} />
-              </motion.a>
-              <motion.a 
-                href="https://linkedin.com/in/edson-bruno-dev" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                whileHover={{ y: -5, scale: 1.1 }}
-                className="w-10 h-10 rounded-full bg-dark-500 flex items-center justify-center text-gray-400 hover:text-cyber-500 hover:bg-dark-400 transition-colors"
-              >
-                <Linkedin size={20} />
-              </motion.a>
-              <motion.a 
-                href="https://twitter.com/edsonbruno" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                whileHover={{ y: -5, scale: 1.1 }}
-                className="w-10 h-10 rounded-full bg-dark-500 flex items-center justify-center text-gray-400 hover:text-cyber-500 hover:bg-dark-400 transition-colors"
-              >
-                <Twitter size={20} />
-              </motion.a>
-              <motion.a 
-                href="mailto:contact@edsonbruno.dev" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                whileHover={{ y: -5, scale: 1.1 }}
-                className="w-10 h-10 rounded-full bg-dark-500 flex items-center justify-center text-gray-400 hover:text-cyber-500 hover:bg-dark-400 transition-colors"
-              >
-                <Mail size={20} />
-              </motion.a>
+              {[{
+                icon: Github, href: "https://github.com/sucloudflare"
+              },{
+                icon: Linkedin, href: "https://linkedin.com/in/edson-bruno-dev"
+              },{
+                icon: Twitter, href: "https://twitter.com/edsonbruno"
+              },{
+                icon: Mail, href: "mailto:contact@edsonbruno.dev"
+              }].map(({icon: Icon, href}, i) => (
+                <motion.a
+                  key={i}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  whileHover={hoverAnim}
+                  className="w-12 h-12 rounded-full bg-dark-600 flex items-center justify-center text-gray-400 hover:text-cyber-500 hover:bg-dark-500 transition-colors drop-shadow-lg"
+                >
+                  <Icon size={22} />
+                </motion.a>
+              ))}
             </div>
           </div>
 
+          {/* Quick Links */}
           <div>
-            <h4 className="font-bold text-xl mb-4 text-white">Links rápidos</h4>
+            <h4 className={`font-bold text-xl mb-4 text-white ${glowText}`}>Links rápidos</h4>
             <ul className="space-y-2">
-              <li>
-                <a href="/" className="text-gray-400 hover:text-cyber-500 transition-colors flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 bg-cyber-500 rounded-full"></span>
-                  Home
-                </a>
-              </li>
-              <li>
-                <a href="/about" className="text-gray-400 hover:text-cyber-500 transition-colors flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 bg-cyber-500 rounded-full"></span>
-                  About
-                </a>
-              </li>
-              <li>
-                <a href="/projects" className="text-gray-400 hover:text-cyber-500 transition-colors flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 bg-cyber-500 rounded-full"></span>
-                  Projects
-                </a>
-              </li>
-              <li>
-                <a href="/contact" className="text-gray-400 hover:text-cyber-500 transition-colors flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 bg-cyber-500 rounded-full"></span>
-                  Contact
-                </a>
-              </li>
+              {['/', '/about', '/projects', '/contact'].map((link, i) => (
+                <li key={i}>
+                  <motion.a
+                    href={link}
+                    whileHover={{ x: 4 }}
+                    className="text-gray-400 hover:text-cyber-500 transition-colors flex items-center gap-2"
+                  >
+                    <span className="w-2 h-2 bg-cyber-500 rounded-full"></span>
+                    {link === '/' ? 'Home' : link.replace('/', '').charAt(0).toUpperCase() + link.slice(2)}
+                  </motion.a>
+                </li>
+              ))}
             </ul>
           </div>
 
+          {/* Technologies */}
           <div>
-            <h4 className="font-bold text-xl mb-4 text-white">Tecnologias utilizadas</h4>
+            <h4 className={`font-bold text-xl mb-4 text-white ${glowText}`}>Tecnologias</h4>
             <div className="grid grid-cols-3 gap-2">
-              <div className="bg-dark-500 p-2 rounded text-center text-xs text-gray-400 hover:text-cyber-500 hover:bg-dark-400 transition-colors">React</div>
-              <div className="bg-dark-500 p-2 rounded text-center text-xs text-gray-400 hover:text-cyber-500 hover:bg-dark-400 transition-colors">Node.js</div>
-              <div className="bg-dark-500 p-2 rounded text-center text-xs text-gray-400 hover:text-cyber-500 hover:bg-dark-400 transition-colors">TypeScript</div>
-              <div className="bg-dark-500 p-2 rounded text-center text-xs text-gray-400 hover:text-cyber-500 hover:bg-dark-400 transition-colors">Java</div>
-              <div className="bg-dark-500 p-2 rounded text-center text-xs text-gray-400 hover:text-cyber-500 hover:bg-dark-400 transition-colors">AWS</div>
-              <div className="bg-dark-500 p-2 rounded text-center text-xs text-gray-400 hover:text-cyber-500 hover:bg-dark-400 transition-colors">DevOps</div>
-              <div className="bg-dark-500 p-2 rounded text-center text-xs text-gray-400 hover:text-cyber-500 hover:bg-dark-400 transition-colors">Python</div>
-              <div className="bg-dark-500 p-2 rounded text-center text-xs text-gray-400 hover:text-cyber-500 hover:bg-dark-400 transition-colors">SQL</div>
-              <div className="bg-dark-500 p-2 rounded text-center text-xs text-gray-400 hover:text-cyber-500 hover:bg-dark-400 transition-colors">NoSQL</div>
+              {techs.map((tech, i) => (
+                <motion.div
+                  key={i}
+                  whileHover={{ scale: 1.1, textShadow: '0 0 8px #00fff7' }}
+                  className="bg-dark-600 p-2 rounded text-center text-xs text-gray-400 hover:text-cyber-500 hover:bg-dark-500 transition-all cursor-default"
+                >
+                  {tech}
+                </motion.div>
+              ))}
             </div>
           </div>
         </div>
 
+        {/* Bottom Info */}
         <div className="text-center pt-6 border-t border-dark-400">
           <p className="text-gray-500 mb-2">
-            © {new Date().getFullYear()}Edson Bruno. Todos os direitos reservados.
+            © {new Date().getFullYear()} Bruno. Todos os direitos reservados.
           </p>
           <p className="text-gray-500 flex items-center justify-center gap-1">
-          Desenvolvido com <Heart className="w-4 h-4 text-red-500" /> e <Terminal className="w-4 h-4 text-cyber-500" />
+            Desenvolvido com <Heart className="w-4 h-4 text-red-500 animate-pulse" /> e <Terminal className="w-4 h-4 text-cyber-500 animate-spin-slow" />
           </p>
         </div>
       </div>

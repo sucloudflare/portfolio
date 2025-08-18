@@ -76,7 +76,7 @@ export function Contact() {
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-white mb-1">Email</h3>
-                  <p className="text-gray-400">cloudflare.ddos21@gmail.com</p>
+                  <p className="text-gray-400">bruno@gmail.com</p>
                   <a href="mailto:contact@edsonbruno.dev" className="text-cyber-500 hover:text-cyber-400 transition-colors text-sm">
                   Envie um e-mail
                   </a>
@@ -89,7 +89,7 @@ export function Contact() {
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-white mb-1">Localização</h3>
-                  <p className="text-gray-400">Sobradinho, Bahia</p>
+                  <p className="text-gray-400">interior, Bahia</p>
                   <p className="text-gray-400">Brazil</p>
                 </div>
               </div>
@@ -118,7 +118,7 @@ export function Contact() {
                 <Github size={24} />
               </motion.a>
               <motion.a
-                href="https://linkedin.com/in/edson-bruno-dev"
+                href="https://linkedin.com/in/bruno"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ y: -5, scale: 1.1 }}
@@ -127,7 +127,7 @@ export function Contact() {
                 <Linkedin size={24} />
               </motion.a>
               <motion.a
-                href="https://twitter.com/edsonbruno"
+                href="https://twitter.com/bruno"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ y: -5, scale: 1.1 }}
@@ -161,7 +161,7 @@ export function Contact() {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 rounded-lg bg-dark-600 text-white border border-dark-400 focus:outline-none focus:ring-2 focus:ring-cyber-500 focus:border-transparent"
-                    placeholder="Edson Bruno"
+                    placeholder="Bruno Silva"
                   />
                 </div>
                 

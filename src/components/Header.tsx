@@ -33,8 +33,8 @@ export function Header() {
 
   const socialLinks = [
     { icon: Github, href: 'https://github.com/sucloudflare' },
-    { icon: Linkedin, href: 'https://linkedin.com/in/edson-bruno-dev' },
-    { icon: Twitter, href: 'https://twitter.com/edsonbruno' },
+    { icon: Linkedin, href: 'https://linkedin.com/in/bruno-dev' },
+    { icon: Twitter, href: 'https://twitter.com/bruno' },
   ];
 
   return (
@@ -61,7 +61,7 @@ export function Header() {
               transition={{ duration: 1, repeat: Infinity, repeatDelay: 3 }}
             >
               <span className="text-cyber-500">&lt;</span>
-              Edson Bruno
+              Bruno
               <span className="text-cyber-500">/&gt;</span>
             </motion.span>
           </Link>
