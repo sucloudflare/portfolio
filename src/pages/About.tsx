@@ -102,7 +102,7 @@ export function About() {
             <div className="mt-6 grid grid-cols-2 gap-4">
               <div className="flex items-center gap-2">
                 <Calendar className="text-cyber-500" size={20} />
-                <span>Nascido em: 29/03/1997</span>
+                <span>Nascido em: 01/05/1999</span>
               </div>
               <div className="flex items-center gap-2">
                 <Code className="text-cyber-500" size={20} />
