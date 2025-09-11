@@ -33,8 +33,8 @@ export function Header() {
 
   const socialLinks = [
     { icon: Github, href: 'https://github.com/sucloudflare' },
-    { icon: Linkedin, href: 'https://linkedin.com/in/bruno-dev' },
-    { icon: Twitter, href: 'https://twitter.com/bruno' },
+    { icon: Linkedin, href: 'https://linkedin.com/in/' },
+    { icon: Twitter, href: 'https://twitter.com/' },
   ];
 
   return (
